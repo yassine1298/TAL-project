@@ -1,0 +1,5 @@
+text1: simulate on a computer the behavior of neuron or other networks of neurons. 
+text2: And finally, you should be able to at the end of the course, formulate competition 
+text3: of principles that would help explain the Let's begin by asking what is 
+text4: computational neuroscience? According to Terry Sejnowski, who was one 
+text5: of the founding fathers of the field and was also my postdoctoral advisers, the 

@@ -1,0 +1,208 @@
+[MUSIC]. 
+Hello, and a warm welcome to every one of 
+you from around the world. 
+
+This is Week 1 of Computation 
+Neuroscience and I'm your instructor, 
+Rajesh Rao. 
+Let's begin our computation adventures 
+with a picture. 
+You've probably seen a picture like this 
+before.
+
+Physicists tell us that this is the 
+universe that we live in, but I think 
+they're mistaken. 
+This is the universe that we really live 
+in. 
+This 3-pound mass of tissue inside our 
+skull is what allows us to perceive the 
+world and indeed the universe. 
+This amazing machine is what enables us 
+to think, feel, act, and be human. 
+This is what is enabling me to speak 
+these words right now and allowing you to 
+listen. 
+And when the lecture gets boring, which 
+hopefully, won't happen too often. 
+You can thank the same 3-pound organ for 
+enabling you to skip forward a few slides 
+or maybe doze off in that chair that 
+you're sitting in. 
+Understanding how the brain does all of 
+these things is one of the most profound 
+scientific mysteries of the 21st century. 
+In this course, we'll try to unravel some 
+of this mystery and understand the brain 
+using computational models. 
+In this course, we'll cover three types 
+of Computational Models. 
+The first kind are Descriptive Models. 
+So in this case, we're interested in 
+quantifying how neurons respond to 
+external stimuli. 
+And what we get here is something called 
+a neural encoding model, which 
+quantitatively describes a particular 
+neuron responds to external stimuli. 
+The counterpart to encoding is decoding. 
+So in this case, we're interested in 
+extracting information from neurons that 
+have been recorded from the brain. 
+And then, using this information for 
+controlling something like a prosthetic 
+hand for example. 
+So this problem of decoding is extremely 
+important in the field of brain-computer 
+interfacing and neuroprosthetics. 
+The second type of model that we look at 
+are called Mechanistic Models. 
+So in this case, we are interested in 
+simulating the behavior of a single 
+neuron or a network of neurons on a 
+computer. 
+So you might have heard about the Human 
+Brain Project that is being led by Henry 
+Markram in Europe. 
+And, that project is an example of a 
+computer simulation of an extremely large 
+network of neurons in the extreme case, 
+perhaps, the entire brain on a computer. 
+The last type of models that we look at 
+are called Interpretive or Normative 
+Models. 
+So in this case, we are interested in 
+understanding why brain circuits operate 
+in the way that they do. 
+In other words, we're interested in 
+extracting some computational principles 
+that underlie the function of a 
+particular brain circuit. 
+So we'll look at examples of all these 
+three types of models in the coming 
+weeks. 
+Now, moving on to some course information 
+and logistics. 
+The length of the course is eight weeks, 
+and each week, we'll give you one video 
+lecture, which will be about 1 hour long. 
+And we'll split this up into 10 minute 
+chunks and we'll also give you one 
+homework quiz each week. 
+Now, these lectures and homeworks will be 
+released on Fridays and the homeworks 
+will be due the second Monday from the 
+release date. 
+So this way, you'll be able to use two 
+weekends to work on each homework and the 
+complete syllabus and schedule is on the 
+course web page. 
+Here are the two recommended textbooks 
+for this course. 
+They are not required, but they might be 
+useful if you need additional information 
+besides what's covered in the lecture 
+videos and lecture slides. 
+The first one is Theoretical 
+Neuroscience, this is a standard textbook 
+in the field and its a book written by 
+Peter Dayan and Larry Abbot, two leading 
+researchers in computational 
+neuroscience. 
+The other textbook is called Tutorial on 
+Neural Systems Modelling and it's by 
+another researcher in the field, Thomas 
+Anastasio. 
+And this book also comes with the Matlab 
+code that you might find useful as you're 
+exploring concepts and computational 
+neuroscience. 
+Now, on to homeworks and gradings. 
+So the course grade will be based on six 
+weekly homeworks, most of these will be 
+multiple choice questions. 
+Some of them will be based on the result 
+of programming and Matlab or Octave. 
+And, we'll allow up to submissions for 
+each homework and we'll take the maximum 
+score out of the three that you've 
+submitted. 
+The good news is there's no exams and 
+there will be a certificate of completion 
+if your total course grade is greater 
+than 60%. 
+I mentioned earlier that some of the 
+homework questions will be based on 
+results that you get after you've 
+executed your program in Matlab. 
+So what if you don't have Matlab? 
+Well, no worries. 
+You can use Octave which is quite similar 
+to Matlab, but it's free. 
+And you can download Octave from the 
+website given on the slide. 
+And Octave should suffice for all the 
+homework questions that we'll have in 
+this course. 
+But what if you have no programming 
+experience to begin with? 
+Well, no problem. 
+Perhaps you can use this opportunity to 
+learn programming. 
+there are several Matlab tutorials on the 
+course website that you can try out, and 
+also, the first homework assignment is 
+actually a Matlab practice homework. 
+So the submission is optional, but it 
+might be really useful for those of you 
+who are programming for the first time in 
+Matlab to try out the homework and submit 
+it and see how you did. 
+So let's end with some of the goals of 
+the course. 
+In other words, what can we expect to 
+learn in this course? 
+Well, at the end of the course, you 
+should be able to, first of all, 
+quantitatively describe what a biological 
+neuron, a network of neurons is doing 
+given some experimental data that perhaps 
+you got from your neuroscientist friend. 
+Secondly, you would like to be able to 
+simulate on a computer the behavior of 
+neuron or other networks of neurons. 
+And finally, you should be able to at the 
+end of the course, formulate competition 
+of principles that would help explain the 
+operation of certain neurons or networks 
+in the brain. 
+So, are you ready? 
+Let's begin. 
+
+ >> Welcome back. 
+Let's begin by asking what is 
+computational neuroscience? 
+According to Terry Sejnowski, who was one 
+of the founding fathers of the field and 
+was also my postdoctoral advisers, the 
+goal of computation neuroscience is to 
+explain in computational terms how brains 
+generate behaviors. 
+Now, let's dissect this definition a 
+little bit. 
+This leads us to a definition proposed by 
+Peter Dayan and Larry Abbott. 
+According to them, computational 
+neuroscience is the field that provides 
+us with the tools and methods for doing 
+three different things. 
+One is characterizing what nervous 
+systems do. 
+The second is Determining how they 
+function. 
+And finally, the third is, understanding 
+why they operate in particular ways. 
+Now, this actually corresponds quite 
+nicely to the three types of 
+computational models that we looked at 
+earlier in the, in a previous lecture.  
